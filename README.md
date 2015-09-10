@@ -17,6 +17,16 @@ environment.
 
     vagrant reload
 
+To get the current status of your virtual machine execute the following.
+
+    vagrant status
+
+To poweroff the virtual machine execute the following.
+
+    vagrant halt
+
+Use `vagrant up` to power on the development environment.
+
 # Log in
 
 Then log in with the user `vagrant` and password `gimp`.
