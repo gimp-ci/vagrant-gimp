@@ -15,8 +15,9 @@ environment.
 
 # Log in
 
-Then log in with the user `vagrant` and password `gimp`.  Or open a
-terminal and execute the following.
+Then log in with the user `vagrant` and password `gimp`.
+
+Alternatively, open a terminal and execute the following.
 
     vagrant ssh
 
