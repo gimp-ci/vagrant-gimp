@@ -17,6 +17,8 @@ environment.
 
     vagrant reload
 
+# Control development environment
+
 To get the current status of your virtual machine execute the following.
 
     vagrant status
