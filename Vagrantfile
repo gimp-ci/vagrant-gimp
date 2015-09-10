@@ -65,5 +65,6 @@ Vagrant.configure(2) do |config|
     /build/gimp-packages/gimp-prereqs.sh
     /build/gimp-packages/babl-prereqs.sh
     /build/gimp-packages/gegl-prereqs.sh
+    cp -f /build/motd /etc/
   SHELL
 end
