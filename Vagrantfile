@@ -56,6 +56,7 @@ Vagrant.configure(2) do |config|
     #prepare and update system
     apt-get update --fix-missing
     apt-get upgrade
+    apt-get install build-essential git cmake automake vim screen
     #set up KDE Desktop Environment
     /build/kde/install.sh
     #set vagrant user password to "gimp"
