@@ -45,9 +45,19 @@ GIMP Development Resources:
 
 Plugin Development:
 
-* http://developer.gimp.org/api/2.0/libgimp/libgimp-Gimp.html
-* http://developer.gimp.org/api/2.0/libgimp/libgimp-gimpplugin.html
-* http://wiki.gimp.org/wiki/Hacking:GSoC/2011/Ideas#Support_writing_JavaScript_plug-ins
-* https://metacpan.org/release/Gimp (perl language bindings for GIMP plugins)
+* See [libgimp-Gimp][lg-gimp] and [libgimp-gimpplugin][lg-gimpplugin] interface
+  documentation around GIMP plugins.
+* [Idea: JavaScript bindings for GIMP plugins][jsbind-idea].
+* [Perl language bindings for GIMP plugins][perlbind].
+* From the GIMP master branch see `gimp/plug-ins/pygimp` for the python
+  language bindings for GIMP plugins.
+* For Gtk+ dialogs see [GOjbect Introspection][gobject] and [Javascript
+  implementations using GObject Introspection][jslibs].
 
+[gobject]: https://wiki.gnome.org/Projects/GObjectIntrospection
+[jsbind-idea]: http://wiki.gimp.org/wiki/Hacking:GSoC/2011/Ideas#Support_writing_JavaScript_plug-ins
+[jslibs]: https://wiki.gnome.org/JavaScript
+[lg-gimp]: http://developer.gimp.org/api/2.0/libgimp/libgimp-Gimp.html
+[lg-gimpplugin]: http://developer.gimp.org/api/2.0/libgimp/libgimp-gimpplugin.html
+[perlbind]: https://metacpan.org/release/Gimp
 [vagrant]: https://www.vagrantup.com/
