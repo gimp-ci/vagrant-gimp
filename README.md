@@ -41,6 +41,8 @@ Alternatively, open a terminal and execute the following.
 
 GIMP Development Resources:
 
+* [See objectives document](objectives.md)
+* http://www.gimp.org/source/
 * http://www.gimp.org/develop/
 
 Plugin Development:
