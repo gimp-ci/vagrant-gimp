@@ -13,12 +13,18 @@
 
 # First steps
 
-* This project should be used to bootstrap your development environment.
+When building GIMP from the `master` branch one needs to also compile the
+latest master of the dependencies GEGL and BABL.  All other dependencies
+can be installed with prefered versions.  See [documentation on
+building GIMP from source][buildgimp].
+
+* Use [vagrant-gimp](../README.md) as your development environment.
 * Clone GIMP: `git://git.gnome.org/gimp`
 * Clone BABL: `git://git.gnome.org/babl`
 * Clone GEGL: `git://git.gnome.org/gegl`
 
 
+[buildgimp]: http://www.gimp.org/source/
 [gobject]: https://wiki.gnome.org/Projects/GObjectIntrospection
 [jsbind-idea]: http://wiki.gimp.org/wiki/Hacking:GSoC/2011/Ideas#Support_writing_JavaScript_plug-ins
 [jslibs]: https://wiki.gnome.org/JavaScript
