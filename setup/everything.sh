@@ -7,7 +7,7 @@
 #mirrors from Debian when trying to install packages)
 function tryscript() (
   retries=0
-  while [ "${retries}" -lt 3 ] && ! $1; do
+  while [ "${retries}" -lt 3 ] && ! $@; do
     apt-get update --fix-missing
     ((retries++))
   done
@@ -22,8 +22,8 @@ function bootstrap() (
 
   #prepare and update system
   apt-get update --fix-missing
-  apt-get upgrade
-  apt-get install git vim screen
+  tryscript apt-get upgrade
+  tryscript apt-get install git vim screen
 
   #set up KDE Desktop Environment
   tryscript /build/kde/install.sh
