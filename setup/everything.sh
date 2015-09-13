@@ -16,7 +16,7 @@ function bootstrap() (
   apt-get install git vim screen
 
   #set up KDE Desktop Environment
-  #/build/kde/install.sh
+  /build/kde/install.sh
 
   #set vagrant user password to "gimp"
   echo "vagrant:gimp" | chpasswd
