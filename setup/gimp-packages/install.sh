@@ -11,6 +11,13 @@ set -x
 #install specific package version
 #apt-get install <package>=<version>
 
+#development dependencies
+DEPS=(
+autoconf
+automake
+)
+apt-get install ${DEPS[*]}
+
 #gimp dependencies
 #any packages that don't have a version specified were pre-installed by upstream
 #dependencies listed at http://www.gimp.org/source/
@@ -23,6 +30,12 @@ libglib2.0-dev
 libpango1.0-0=1.36.8-3
 libpango1.0-dev=1.36.8-3
 fontconfig
+libxslt1.1
+libxslt1-dev
+xsltproc
+gtk-doc-tools
+python-gtk2
+python-gtk2-dev
 )
 #optional dependencies
 OPT_DEPS=(
@@ -53,3 +66,18 @@ python
 python-dev
 )
 apt-get install ${DEPS[*]} ${OPT_DEPS[*]}
+
+#babl deps
+DEPS=(
+libtool
+libltdl-dev
+)
+apt-get install ${DEPS[*]}
+
+#gegl deps
+DEPS=(
+intltool
+libjson-glib-1.0-0
+libjson-glib-dev
+)
+apt-get install ${DEPS[*]}

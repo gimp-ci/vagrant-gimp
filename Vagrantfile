@@ -52,21 +52,6 @@ Vagrant.configure(2) do |config|
     hostnamectl set-hostname #{hostname}
     echo "127.0.0.1 #{hostname}" >> /etc/hosts
     locale-gen #{locale}
-    #configure apt for passwordless auth
-    /build/apt/install.sh
-    #prepare and update system
-    apt-get update --fix-missing
-    apt-get upgrade
-    apt-get install git vim screen
-    #set up KDE Desktop Environment
-    #/build/kde/install.sh
-    #set vagrant user password to "gimp"
-    echo "vagrant:gimp" | chpasswd
-    #install GIMP prerequisite packages
-    #/build/gimp-packages/shared-prereqs.sh
-    #/build/gimp-packages/gimp-prereqs.sh
-    #/build/gimp-packages/babl-prereqs.sh
-    #/build/gimp-packages/gegl-prereqs.sh
-    cp -f /build/motd /etc/
+    /build/everything.sh
   SHELL
 end

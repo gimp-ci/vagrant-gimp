@@ -9,8 +9,8 @@ fi
 echo "Setting up for GIMP development (as vagrant user)." 1>&2
 set -x
 
-mkdir -p ~vagrant/git
-cd ~vagrant/git
+mkdir -p ~/git
+cd ~/git
 
 #clone sources
 #check to see if we can clone over git protocol (it may be blocked by firewall)
@@ -27,3 +27,7 @@ for x in gimp gegl babl; do
     git clone "${clone_url}/${x}"
   fi
 done
+
+export PREFIX=/home/vagrant/gimp-git
+mkdir -p "${PREFIX}"/share
+cp /build/gimp-source/config.site "${PREFIX}"/share/

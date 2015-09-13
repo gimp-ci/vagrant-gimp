@@ -37,6 +37,29 @@ Alternatively, open a terminal and execute the following.
 
     vagrant ssh
 
+# Build GIMP
+
+After the environment first loads it should be ready to build GIMP.
+There should the following files and directories in the `vagrant` user.
+
+* `~/gimp-git` - contains all of the output from the gimp build.
+* `~/gimp-git/share/config.site` - a file containing variables used by the build
+  process.
+* `~/git/babl` - source code of BABL
+* `~/git/gegl` - source code of GEGL
+* `~/git/gimp` - source code of GIMP
+* `~/build-gimp.sh` - a script to compile BABL, GEGL, and GIMP all at
+  once.
+
+To build GIMP either open a terminal from the GUI or launch `vagrant
+ssh`.  Then execute the following command from the vagrant home
+directory.
+
+    ./build-gimp.sh
+
+When the process is done, GIMP should be built.  Simply execute
+`gimp-2.9` from a terminal to start the latest development build of GIMP.
+
 # Development resources for GIMP
 
 GIMP Development Resources:

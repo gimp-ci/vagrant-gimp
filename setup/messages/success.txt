@@ -1,0 +1,22 @@
+################################################################################
+# SUCCESS - Vagrant bootstrapping finished.                                    #
+################################################################################
+#                                                                              #
+# Vagrant bootstrapping has been successful!  Before developing execute the    #
+# following command:                                                           #
+#                                                                              #
+#     vagrant reload                                                           #
+#                                                                              #
+# After the system reloads you should have a GUI.                              #
+#                                                                              #
+# * Username: vagrant                                                          #
+# * Password: gimp                                                             #
+#                                                                              #
+# There's now a script in your home directory called build-gimp.sh.  If you    #
+# execute this script it will build BABL, GEGL, and GIMP from their master     #
+# branch.  To build simply execute the script.                                 #
+#                                                                              #
+#     vagrant ssh                                                              #
+#     ./build-gimp.sh                                                          #
+#                                                                              #
+################################################################################

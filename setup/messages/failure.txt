@@ -1,0 +1,18 @@
+################################################################################
+# FAILURE - Vagrant bootstrapping failed                                       #
+################################################################################
+#                                                                              #
+# The GIMP development environment setup has failed somehow.  You have two     #
+# options to resolve this issue.                                               #
+#                                                                              #
+# 1) Delete your bootstrapped environment and restart the entire process.  To  #
+#    do that execute the following commands.                                   #
+#        vagrant destroy                                                       #
+#        vagrant up                                                            #
+#                                                                              #
+# 2) Try to rerun the setup script again without deleting all of your          #
+#    progress.  To do that execute the following commands.                     #
+#        vagrant ssh                                                           #
+#        /build/everything.sh                                                  #
+#                                                                              #
+################################################################################
