@@ -31,3 +31,4 @@ done
 export PREFIX=/home/vagrant/gimp-git
 mkdir -p "${PREFIX}"/share
 cp /build/gimp-source/config.site "${PREFIX}"/share/
+cp /build/gimp-source/build-gimp.sh ~/

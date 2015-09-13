@@ -60,6 +60,8 @@ directory.
 When the process is done, GIMP should be built.  Simply execute
 `gimp-2.9` from a terminal to start the latest development build of GIMP.
 
+The binary is located in `~/gimp-git/bin/gimp-2.9`.
+
 # Development resources for GIMP
 
 GIMP Development Resources:
