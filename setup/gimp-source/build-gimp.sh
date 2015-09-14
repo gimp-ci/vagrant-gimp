@@ -10,6 +10,7 @@ if [ ! "${USER}" = "vagrant" ]; then
 fi
 set -e
 
+#PREFIX is set in ~/.bashrc
 export BABL_PREFIX="${PREFIX}"
 export GEGL_PREFIX="${PREFIX}"
 
