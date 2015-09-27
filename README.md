@@ -4,7 +4,8 @@ Welcome!  This development environment is meant to get you up and running fast.
 This environment is intended for development of the GNU Image Manipulation
 Program or GIMP for short.
 
-This repository assumes you already have [Vagrant installed][vagrant].
+This repository assumes you already have [Vagrant installed][vagrant] and
+[VirtualBox installed][vbox].
 
 # Provision development environment
 
@@ -88,3 +89,4 @@ Plugin Development:
 [lg-gimpplugin]: http://developer.gimp.org/api/2.0/libgimp/libgimp-gimpplugin.html
 [perlbind]: https://metacpan.org/release/Gimp
 [vagrant]: https://www.vagrantup.com/
+[vbox]: https://www.virtualbox.org/wiki/Downloads
