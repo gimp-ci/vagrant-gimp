@@ -4,6 +4,8 @@
 * Create JavaScript bindings to libgimp so that GIMP plugins can be
   written in JavaScript.  This is based off of [2011 Idea support writing
   JavaScript plugins][jsbind-idea].
+* Programming GIMP plugins in JavaScript should be idiomatic to the JavaScript
+  language.
 
 # Technical recommendations
 
