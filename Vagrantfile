@@ -10,7 +10,7 @@ Vagrant.configure(2) do |config|
   # For a complete reference, please see the online documentation at
   # https://docs.vagrantup.com.
 
-  version = "0.1"
+  version = "0.2"
   hostname = "gimpdev"
   locale = "en_US.UTF-8"
 
@@ -18,6 +18,7 @@ Vagrant.configure(2) do |config|
   # boxes at https://atlas.hashicorp.com/search.
   # https://atlas.hashicorp.com/debian/
   config.vm.box = "debian/jessie64"
+  config.vm.box_version = "8.2.0"
 
   #Shared folders
   config.vm.synced_folder "./setup", "/build"

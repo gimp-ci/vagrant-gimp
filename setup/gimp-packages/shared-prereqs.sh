@@ -20,7 +20,7 @@ libavformat-dev
 libexiv2-dev
 libglib2.0-dev
 libjasper-dev
-libjpeg8-dev:amd64
+libjpeg62-turbo-dev
 liblcms2-dev:amd64
 libpng12-dev:amd64
 librsvg2-dev
