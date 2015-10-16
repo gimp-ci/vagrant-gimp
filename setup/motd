@@ -12,3 +12,8 @@ GIMP Development Resources:
 * /vagrant/objectives.md
 * http://www.gimp.org/source/
 * http://www.gimp.org/develop/
+
+Source code is located in ~/git/
+Build GIMP: ~/build-gimp.sh
+Install location: ~/gimp-git/bin/gimp-2.9
+User configuration files: ~/.config/GIMP/2.9
