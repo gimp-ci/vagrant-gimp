@@ -17,4 +17,5 @@ if ! grep -q 'PREFIX' ~/.bashrc; then
 export PREFIX=/home/vagrant/gimp-git
 export PATH="\${PREFIX}/bin:\${PATH}"
 EOF
+  echo 'MANPATH_MAP /home/vagrant/gimp-git/bin /home/vagrant/gimp-git/share/man' | sudo tee -a /etc/manpath.config
 fi
