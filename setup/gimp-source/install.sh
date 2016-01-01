@@ -15,16 +15,10 @@ cd ~/git
 #clone sources
 #check to see if we can clone over git protocol (it may be blocked by firewall)
 #if blocked then fall back to using port 443 to clone projects
-if timeout 10 nc -vz git.gnome.org 9418; then
-  echo "Using smart Git protocol."
-  clone_url="git://git.gnome.org"
-else
-  echo "Using dumb HTTP protocol"
-  clone_url="https://git.gnome.org/browse"
-fi
+clone_url="https://github.com/gnome"
 for x in gimp gegl babl; do
   if [ ! -e "${x}" ]; then
-    git clone "${clone_url}/${x}"
+    git clone "${clone_url}/${x}.git"
   fi
 done
 
