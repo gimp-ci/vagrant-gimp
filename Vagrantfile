@@ -10,7 +10,7 @@ Vagrant.configure(2) do |config|
   # For a complete reference, please see the online documentation at
   # https://docs.vagrantup.com.
 
-  version = "0.2"
+  version = "0.3"
   hostname = "gimpdev"
   locale = "en_US.UTF-8"
 
