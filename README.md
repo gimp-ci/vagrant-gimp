@@ -10,7 +10,7 @@ This repository assumes you already have [Vagrant installed][vagrant] and
 
 * Install the [latest version of Vagrant][vagrant] (Vagrant 1.8.1 as of this
   writing).
-* Install the [latest version of VirtualBox][vbox] (VirtualBox 5.0.10 as of this
+* Install the [latest version of VirtualBox][vbox] (VirtualBox 5.0.12 as of this
   writing).
 
 # Provision development environment

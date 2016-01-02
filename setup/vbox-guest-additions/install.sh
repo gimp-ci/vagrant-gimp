@@ -4,7 +4,7 @@ source /build/buildconfig
 echo "Installing VirtualBox Guest Additions." 1>&2
 set -x
 
-export vbox_version="${vbox_version:-5.0.10}"
+export vbox_version="${vbox_version:-5.0.12}"
 
 if [ ! -e "/tmp/VBoxGuestAdditions_${vbox_version}.iso" ]; then
   echo 'Downloading guest additions.'
