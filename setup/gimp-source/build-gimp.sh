@@ -14,18 +14,21 @@ set -e
 export BABL_PREFIX="${PREFIX}"
 export GEGL_PREFIX="${PREFIX}"
 
+#parallelize number of threads based on number of available CPUs
+THREADS="$(nproc)"
+
 #build babl (a GIMP dependency) from latest master
 cd ~/git/babl
 mkdir -p ~/gimp-git/share/aclocal
 ./autogen.sh --prefix="${BABL_PREFIX}"
-make
-make install
+make -j${THREADS}
+make -j${THREADS} install
 
 #build gegl (a GIMP dependency) from latest master
 cd ~/git/gegl
 ./autogen.sh --prefix="${GEGL_PREFIX}"
-make
-make install
+make -j${THREADS}
+make -j${THREADS} install
 
 #build libmypaint (depends on GEGL and depended on by GIMP)
 cd ~/git/libmypaint
@@ -37,5 +40,5 @@ scons prefix="${PREFIX}" use_sharedlib=yes enable_gegl=true install
 #build GIMP from latest master
 cd ~/git/gimp
 ./autogen.sh --prefix="${PREFIX}"
-make
-make install
+make -j${THREADS}
+make -j${THREADS} install

@@ -88,6 +88,18 @@ Plugin Development:
 * For Gtk+ dialogs see [GOjbect Introspection][gobject] and [Javascript
   implementations using GObject Introspection][jslibs].
 
+# More performance
+
+Currently the vagrant box is relatively low spec with the default 8MB video RAM,
+2048MB RAM, and 1 CPU core.  The `build-gimp.sh` script will automatically take
+advantage of more cores to build GIMP faster.  Just edit the
+[`Vagrant`](Vagrant) file and update the following settings.
+
+    # Customize the VM specs (memory values in MB)
+    vb.memory = "8192"
+    vb.customize ["modifyvm", :id, "--vram", "128"]
+    vb.cpus = "8"
+
 [gobject]: https://wiki.gnome.org/Projects/GObjectIntrospection
 [jsbind-idea]: http://wiki.gimp.org/wiki/Hacking:GSoC/2011/Ideas#Support_writing_JavaScript_plug-ins
 [jslibs]: https://wiki.gnome.org/JavaScript
