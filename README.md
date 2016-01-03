@@ -95,7 +95,7 @@ Plugin Development:
 Currently the vagrant box is relatively low spec with the default 8MB video RAM,
 2048MB RAM, and 1 CPU core.  The `build-gimp.sh` script will automatically take
 advantage of more cores to build GIMP faster.  Just edit the
-[`Vagrant`](Vagrant) file and update the following settings.
+[`Vagrantfile`](Vagrantfile) file and update the following settings.
 
     # Customize the VM specs (memory values in MB)
     vb.memory = "8192"
