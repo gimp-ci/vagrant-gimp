@@ -24,7 +24,9 @@ echo "vagrant:gimp" | chpasswd
 /build/tryscript.sh /build/gimp-packages/gimp-prereqs.sh
 /build/tryscript.sh /build/gimp-packages/babl-prereqs.sh
 /build/tryscript.sh /build/gimp-packages/gegl-prereqs.sh
+/build/tryscript.sh /build/libmypaint-packages/install.sh
 /build/gimp-source/install.sh
+/build/libmypaint-source/install.sh
 
 #a helpful message when a user logs in with vagrant ssh
 cp -f /build/motd /etc/

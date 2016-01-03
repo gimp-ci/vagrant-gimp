@@ -8,9 +8,9 @@ This repository assumes you already have [Vagrant installed][vagrant] and
 [VirtualBox installed][vbox].
 # Prerequisites
 
-* Install the [latest version of Vagrant][vagrant] (Vagrant 1.7.4 as of this
+* Install the [latest version of Vagrant][vagrant] (Vagrant 1.8.1 as of this
   writing).
-* Install the [latest version of VirtualBox][vbox] (VirtualBox 5.0.4 as of this
+* Install the [latest version of VirtualBox][vbox] (VirtualBox 5.0.12 as of this
   writing).
 
 # Provision development environment
@@ -87,6 +87,35 @@ Plugin Development:
   language bindings for GIMP plugins.
 * For Gtk+ dialogs see [GOjbect Introspection][gobject] and [Javascript
   implementations using GObject Introspection][jslibs].
+
+# Tips and Tricks
+
+### More performance
+
+Currently the vagrant box is relatively low spec with the default 8MB video RAM,
+2048MB RAM, and 1 CPU core.  The `build-gimp.sh` script will automatically take
+advantage of more cores to build GIMP faster.  Just edit the
+[`Vagrant`](Vagrant) file and update the following settings.
+
+    # Customize the VM specs (memory values in MB)
+    vb.memory = "8192"
+    vb.customize ["modifyvm", :id, "--vram", "128"]
+    vb.cpus = "8"
+
+### Virtualbox Guest Additions
+
+Why virtualbox guest additions?  If you're using a graphical UI then it will
+autoscale when you fullscreen the virtual machine.  Shared clipboards can also
+be enabled.  These features are useful when developing software inside a VM.
+
+A script for installing Virtualbox guest additions has been provided.  From
+within the VM simply call:
+
+    /vagrant/setup/vbox-guest-additions/install.sh
+
+One can override the version of guest additions being installed.
+
+    vbox_version=5.0.12 /vagrant/setup/vbox-guest-additions/install.sh
 
 [gobject]: https://wiki.gnome.org/Projects/GObjectIntrospection
 [jsbind-idea]: http://wiki.gimp.org/wiki/Hacking:GSoC/2011/Ideas#Support_writing_JavaScript_plug-ins

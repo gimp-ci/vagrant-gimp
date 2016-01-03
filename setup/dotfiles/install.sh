@@ -16,6 +16,10 @@ if ! grep -q 'PREFIX' ~/.bashrc; then
 #gimp prefix
 export PREFIX=/home/vagrant/gimp-git
 export PATH="\${PREFIX}/bin:\${PATH}"
+
+#for GIMP packages and startup
+export PKG_CONFIG_PATH="\${PREFIX}/lib/pkgconfig:\${PKG_CONFIG_PATH}"
+export LD_LIBRARY_PATH="\${PREFIX}/lib:\${LD_LIBRARY_PATH}"
 EOF
   echo 'MANPATH_MAP /home/vagrant/gimp-git/bin /home/vagrant/gimp-git/share/man' | sudo tee -a /etc/manpath.config
 fi

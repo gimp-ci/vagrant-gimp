@@ -10,7 +10,7 @@ Vagrant.configure(2) do |config|
   # For a complete reference, please see the online documentation at
   # https://docs.vagrantup.com.
 
-  version = "0.2"
+  version = "0.3"
   hostname = "gimpdev"
   locale = "en_US.UTF-8"
 
@@ -31,8 +31,10 @@ Vagrant.configure(2) do |config|
     # Display the VirtualBox GUI when booting the machine
     vb.gui = true
 
-    # Customize the amount of memory on the VM:
+    # Customize the VM specs (memory values in MB)
     vb.memory = "2048"
+    #vb.customize ["modifyvm", :id, "--vram", "128"]
+    #vb.cpus = "8"
   end
   #
   # View the documentation for the provider you are using for more
